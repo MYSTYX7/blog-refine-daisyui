@@ -8,6 +8,9 @@ In this React project, built upon the Refine-DaisyUI framework:
 - Integrated Date Range Picker functionality for enhanced user interaction.
 - Achieved nearly complete replication of the Figma design into code.   
 
+## Live Link
+You can visit the live web app on this link: [MarbleAI](https://marble-ai-one.vercel.app)
+
 ## Assessment Screenshots
 
 <div style="display: flex; justify-content: space-around;">
