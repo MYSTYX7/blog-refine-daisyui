@@ -34,7 +34,7 @@ To run the application locally, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd Marble-AI
+   cd blog-refine-daisyui
    ```
 
 3. Install dependencies using npm:
