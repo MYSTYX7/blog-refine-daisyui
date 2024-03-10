@@ -173,9 +173,9 @@ const Stats: React.FC<TStats> = ({
   }, [startDate, endDate]);
 
   return (
-    <div className="bg-white rounded-lg drop-shadow-md">
+    <div className="bg-white rounded-lg drop-shadow-md px-5">
       <Accordion open={open === 1} id="1" placeholder="your_placeholder_value">
-        <div className="w-full mx-auto mb-4 flex flex-col justify-center items-stretch md:flex-row md:justify-between px-5">
+        <div className="w-full mx-auto mb-4 flex flex-col justify-center items-stretch md:flex-row md:justify-between">
           <div className="w-full mx-auto md:flex-1 mr-2">
             <KpiCard
               title="Online Store Sessions"
@@ -212,7 +212,7 @@ const Stats: React.FC<TStats> = ({
             </div>
           </div>
         </div>
-        <AccordionBody>
+        <AccordionBody className="pb-5 rounded-lg">
           {!isLoading && Tabs ? (
             <div>
               <div className="flex flex-col md:flex-row justify-between items-center md:w-full pr-5">
@@ -226,7 +226,7 @@ const Stats: React.FC<TStats> = ({
                       htmlFor="start_date"
                       className="mr-2 md:mr-2 text-base font-normal text-[#303030]"
                     >
-                      Starting Date:
+                      From:
                     </label>
                     <input
                       id="start_date"
@@ -240,7 +240,7 @@ const Stats: React.FC<TStats> = ({
                       htmlFor="end_date"
                       className="mr-2 md:mr-2 text-base font-normal text-[#303030]"
                     >
-                      Ending Date:
+                      To:
                     </label>
                     <input
                       id="end_date"
@@ -256,7 +256,7 @@ const Stats: React.FC<TStats> = ({
           ) : (
             <SkeletonTheme baseColor="#e3e3e3">
               {/* <p style={{ marginBottom: "5px" }}> */}
-              <Skeleton width={"100vw"} height={"70vh"} />
+              <Skeleton width={"100vw"} height={"60vh"} />
               {/* </p> */}
             </SkeletonTheme>
           )}
